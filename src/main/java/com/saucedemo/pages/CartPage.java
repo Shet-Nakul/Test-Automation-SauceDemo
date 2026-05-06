@@ -14,7 +14,7 @@ import java.util.List;
 public class CartPage extends BasePage {
 
     // ──────────────────── Locators ────────────────────
-    private static final By PAGE_TITLE         = By.cssSelector(".title");
+    private static final By PAGE_TITLE         = By.cssSelector(".tit");
     private static final By CART_ITEMS         = By.cssSelector(".cart_item");
     private static final By CART_ITEM_NAMES    = By.cssSelector(".inventory_item_name");
     private static final By CART_ITEM_PRICES   = By.cssSelector(".inventory_item_price");

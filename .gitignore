@@ -1,0 +1,51 @@
+# --- Maven ---
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# Optional: keep the maven wrapper if you use it
+!/.mvn/wrapper/maven-wrapper.jar
+
+# --- Selenium & Test Reports ---
+# Ignore local test reports and logs
+test-output/
+allure-results/
+allure-report/
+**/extent-reports/
+*.log
+chromedriver.log
+geckodriver.log
+
+# --- Java Compilation ---
+*.class
+*.jar
+*.war
+*.ear
+# Crash logs
+hs_err_pid*
+
+# --- IntelliJ IDEA ---
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# --- Eclipse ---
+.settings/
+.classpath
+.project
+.metadata/
+bin/
+
+# --- Visual Studio Code ---
+.vscode/
+
+# --- Operating System ---
+.DS_Store
+Thumbs.db

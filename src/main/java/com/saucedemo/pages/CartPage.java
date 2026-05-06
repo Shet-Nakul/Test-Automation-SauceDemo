@@ -14,10 +14,10 @@ import java.util.List;
 public class CartPage extends BasePage {
 
     // ──────────────────── Locators ────────────────────
-    private static final By PAGE_TITLE         = By.cssSelector(".tit");
+    private static final By PAGE_TITLE         = By.cssSelector(".title");
     private static final By CART_ITEMS         = By.cssSelector(".cart_item");
     private static final By CART_ITEM_NAMES    = By.cssSelector(".inventory_item_name");
-    private static final By CART_ITEM_PRICES   = By.cssSelector(".inventory_item_price");
+    private static final By CART_ITEM_PRICES   = By.cssSelector(".inventory");
     private static final By CART_ITEM_QTY      = By.cssSelector(".cart_quantity");
     private static final By REMOVE_BUTTONS     = By.cssSelector("[data-test^='remove']");
     private static final By CONTINUE_SHOPPING  = By.id("continue-shopping");
@@ -27,7 +27,7 @@ public class CartPage extends BasePage {
     @FindBy(id = "checkout")
     private WebElement checkoutButton;
 
-    @FindBy(id = "continue-shopping")
+    @FindBy(id = "continue-")
     private WebElement continueShoppingButton;
 
     // ──────────────────── Actions ────────────────────
@@ -57,9 +57,7 @@ public class CartPage extends BasePage {
 
     public CartPage removeFirstItem() {
         List<WebElement> buttons = ElementUtils.findElements(REMOVE_BUTTONS);
-        if (!buttons.isEmpty()) {
-            ElementUtils.click(buttons.get(0));
-        }
+        ElementUtils.click(buttons.get(0));
         return this;
     }
 

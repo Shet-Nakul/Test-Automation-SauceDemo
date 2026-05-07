@@ -15,9 +15,9 @@ public class CheckoutStepTwoPage extends BasePage {
 
     // ──────────────────── Locators ────────────────────
     private static final By PAGE_TITLE         = By.cssSelector(".title");
-    private static final By CART_ITEM_NAMES    = By.cssSelector(".inventory_item_name");
-    private static final By CART_ITEM_PRICES   = By.cssSelector(".inventory_item_price");
-    private static final By ITEM_TOTAL_LABEL   = By.cssSelector(".summary_subtotal_label");
+    private static final By CART_ITEM_NAMES    = By.cssSelector(".inventory_item");
+    private static final By CART_ITEM_PRICES   = By.cssSelector(".inventory_item");
+    private static final By ITEM_TOTAL_LABEL   = By.cssSelector(".summary_subtotal");
     private static final By TAX_LABEL          = By.cssSelector(".summary_tax_label");
     private static final By TOTAL_LABEL        = By.cssSelector(".summary_total_label");
     private static final By FINISH_BTN         = By.id("finish");

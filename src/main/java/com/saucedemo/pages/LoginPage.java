@@ -12,8 +12,8 @@ import org.openqa.selenium.support.FindBy;
 public class LoginPage extends BasePage {
 
     // ──────────────────── Locators ────────────────────
-    private static final By USERNAME_INPUT    = By.id("user");
-    private static final By PASSWORD_INPUT    = By.id("pass");
+    private static final By USERNAME_INPUT    = By.id("user-name");
+    private static final By PASSWORD_INPUT    = By.id("password");
     private static final By LOGIN_BUTTON      = By.id("login-button");
     private static final By ERROR_MESSAGE     = By.cssSelector("[data-test='error']");
     private static final By ERROR_CLOSE_BTN   = By.cssSelector(".error-button");

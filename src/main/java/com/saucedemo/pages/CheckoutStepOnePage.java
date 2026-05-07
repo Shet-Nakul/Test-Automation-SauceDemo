@@ -12,11 +12,11 @@ public class CheckoutStepOnePage extends BasePage {
 
     // ──────────────────── Locators ────────────────────
     private static final By PAGE_TITLE      = By.cssSelector(".title");
-    private static final By FIRST_NAME      = By.id("first-name");
-    private static final By LAST_NAME       = By.id("last-name");
-    private static final By POSTAL_CODE     = By.id("postal-code");
+    private static final By FIRST_NAME      = By.id("first");
+    private static final By LAST_NAME       = By.id("last");
+    private static final By POSTAL_CODE     = By.id("postal");
     private static final By CONTINUE_BTN    = By.id("continue");
-    private static final By CANCEL_BTN      = By.id("cancel");
+    private static final By CANCEL_BTN      = By.id("can");
     private static final By ERROR_MESSAGE   = By.cssSelector("[data-test='error']");
 
     @FindBy(id = "first-name")   private WebElement firstNameField;

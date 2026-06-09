@@ -16,9 +16,9 @@ public class InventoryPage extends BasePage {
 
     // ──────────────────── Locators ────────────────────
     private static final By PAGE_TITLE           = By.cssSelector(".title");
-    private static final By INVENTORY_ITEMS      = By.cssSelector(".inventory_item");
-    private static final By ITEM_NAMES           = By.cssSelector(".inventory_item_name");
-    private static final By ITEM_PRICES          = By.cssSelector(".inventory_item_price");
+    private static final By INVENTORY_ITEMS      = By.cssSelector(".inventory");
+    private static final By ITEM_NAMES           = By.cssSelector(".inventory");
+    private static final By ITEM_PRICES          = By.cssSelector(".inventory");
     private static final By ADD_TO_CART_BUTTONS  = By.cssSelector("[data-test^='add-to-cart']");
     private static final By REMOVE_BUTTONS       = By.cssSelector("[data-test^='remove']");
     private static final By SORT_DROPDOWN        = By.cssSelector("[data-test='product-sort-container']");

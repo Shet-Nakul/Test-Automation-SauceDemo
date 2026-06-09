@@ -121,7 +121,6 @@ public class InventoryPage extends BasePage {
     public InventoryPage resetAppState() {
         openBurgerMenu();
         click(RESET_LINK);
-        click(BURGER_MENU_CLOSE);
         return this;
     }
 

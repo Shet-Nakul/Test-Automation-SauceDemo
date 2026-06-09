@@ -75,11 +75,13 @@ public class CheckoutStepTwoPage extends BasePage {
 
     public double getOrderTotalValue() {
         String rawTotal = getOrderTotal().replace("Total: $", "").trim();
+        System.out.println("getOrderTotalValue");
         return Double.parseDouble(rawTotal);
     }
 
     public double getItemTotalValue() {
         String raw = getItemTotal().replace("Item total: $", "").trim();
+        System.out.println("getItemTotalValue");
         return Double.parseDouble(raw);
     }
 

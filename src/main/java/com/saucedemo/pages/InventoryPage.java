@@ -66,6 +66,7 @@ public class InventoryPage extends BasePage {
     public InventoryPage addFirstProductToCart() {
         List<WebElement> buttons = ElementUtils.findElements(ADD_TO_CART_BUTTONS);
         if (!buttons.isEmpty()) {
+            System.out.println("ADD_TO_CART_BUTTONS");
             ElementUtils.click(buttons.get(0));
         }
         return this;
@@ -74,6 +75,7 @@ public class InventoryPage extends BasePage {
     public InventoryPage addAllProductsToCart() {
         log.info("Adding all products to cart");
         List<WebElement> buttons = ElementUtils.findElements(ADD_TO_CART_BUTTONS);
+        System.out.println("ADD_TO_CART_BUTTONS");
         buttons.forEach(ElementUtils::click);
         return this;
     }

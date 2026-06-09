@@ -43,11 +43,13 @@ public class ProductDetailPage extends BasePage {
 
     public InventoryPage goBackToProducts() {
         log.info("Navigating back to products");
+        System.out.println("goBackToProducts");
         click(BACK_BUTTON);
         return new InventoryPage();
     }
 
     public CartPage goToCart() {
+        System.out.println("goToCart");
         click(CART_LINK);
         return new CartPage();
     }

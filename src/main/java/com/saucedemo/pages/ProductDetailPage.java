@@ -19,7 +19,7 @@ public class ProductDetailPage extends BasePage {
     private static final By BACK_BUTTON         = By.id("back-to-products");
     private static final By PRODUCT_IMAGE       = By.cssSelector(".inventory_details_img");
     private static final By CART_BADGE          = By.cssSelector(".shopping_cart_badge");
-    private static final By CART_LINK           = By.cssSelector(".shopping_cart");
+    private static final By CART_LINK           = By.cssSelector(".shopping_cart_link");
 
     @FindBy(css = ".inventory_details_name")
     private WebElement productName;

@@ -43,6 +43,9 @@ public class ProductDetailPage extends BasePage {
 
     public InventoryPage goBackToProducts() {
         log.info("Navigating back to products");
+        for(int i=0; i < 5; i++){
+            System.out.println(i);
+        }
         click(BACK_BUTTON);
         return new InventoryPage();
     }

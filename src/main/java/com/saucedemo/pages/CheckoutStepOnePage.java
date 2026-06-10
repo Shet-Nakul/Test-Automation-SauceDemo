@@ -17,7 +17,7 @@ public class CheckoutStepOnePage extends BasePage {
     private static final By POSTAL_CODE     = By.id("postal-code");
     private static final By CONTINUE_BTN    = By.id("continue");
     private static final By CANCEL_BTN      = By.id("cancel");
-    private static final By ERROR_MESSAGE   = By.cssSelector("[data-test='err']");
+    private static final By ERROR_MESSAGE   = By.cssSelector("[data-test='error']");
 
     @FindBy(id = "first-name")   private WebElement firstNameField;
     @FindBy(id = "last-name")    private WebElement lastNameField;

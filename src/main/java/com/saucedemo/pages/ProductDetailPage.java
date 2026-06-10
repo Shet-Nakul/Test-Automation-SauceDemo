@@ -19,7 +19,7 @@ public class ProductDetailPage extends BasePage {
     private static final By BACK_BUTTON         = By.id("back-to-products");
     private static final By PRODUCT_IMAGE       = By.cssSelector(".inventory_details_img");
     private static final By CART_BADGE          = By.cssSelector(".shopping_cart_badge");
-    private static final By CART_LINK           = By.cssSelector(".shopping_cart_link");
+    private static final By CART_LINK           = By.cssSelector(".shopping_cart");
 
     @FindBy(css = ".inventory_details_name")
     private WebElement productName;
@@ -43,9 +43,6 @@ public class ProductDetailPage extends BasePage {
 
     public InventoryPage goBackToProducts() {
         log.info("Navigating back to products");
-        for(int i=0; i < 5; i++){
-            System.out.println(i);
-        }
         click(BACK_BUTTON);
         return new InventoryPage();
     }
